@@ -244,6 +244,12 @@ footer a {
     text-decoration: none;
 }
 
+.vers1 {
+    color: #ffffff;
+    text-decoration-color: white;
+    text-decoration-line: grammar-error;
+}
+
 /* Modal */
 .modal {
     display: none;
@@ -274,16 +280,80 @@ footer a {
     cursor: pointer;
 }
 
+@media (max-width: 900px) {
+    .container {
+        padding: 1rem;
+    }
+    .informacion-personal,
+    .estudios {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .cards {
+        grid-template-columns: 1fr;
+    }
+    .formacion > .cards {
+        grid-template-columns: 1fr;
+    }
+}
+
 @media (max-width: 600px) {
+    header {
+        padding: 1.2rem 0.5rem 2.5rem 0.5rem;
+    }
+    header h1 {
+        font-size: 1.3rem;
+    }
+    .container {
+        padding: 0.5rem;
+        padding-top: 50px;
+    }
+    .informacion-personal,
+    .estudios {
+        flex-direction: column;
+        gap: 12px;
+    }
+    .perfil,
+    .sobremi,
+    .estudio,
+    .formacion {
+        min-width: 0;
+        flex: 1 1 100%;
+    }
+    .cards,
+    .formacion > .cards {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
     .botones-redes {
         gap: 1.1rem;
         bottom: -20px;
     }
-
     .red-social {
-        width: 44px;
-        height: 44px;
-        font-size: 1.5rem;
+        height: 2.8rem;
+        min-width: 2.8rem;
+        width: 2.8rem;
+        font-size: 1.1rem;
+    }
+    h2 {
+        font-size: 1.2rem;
+    }
+    h3 {
+        font-size: 1rem;
+    }
+    h4 {
+        font-size: 0.9rem;
+    }
+    .skills {
+        gap: 0.3rem;
+        flex-wrap: wrap;
+    }
+    .skill {
+        font-size: 0.8rem;
+        padding: 0.3rem 0.5rem;
+    }
+    .modal-content {
+        max-width: 98%;
     }
 }
 

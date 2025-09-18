@@ -3663,6 +3663,7 @@ body {
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
     line-height: 1.625rem;
+    padding-right: 20px;
 }
 
 .navbar .navbar-toggler {
