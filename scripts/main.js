@@ -1,43 +1,22 @@
-// Add your javascript here
-// Don't forget to add it into respective layouts where this js file is needed
+// Inicializa AOS (animaciones al hacer scroll)
+AOS.init({ duration: 1000, once: true });
 
-$(document).ready(function() {
-  AOS.init( {
-    // uncomment below for on-scroll animations to played only once
-    // once: true  
-  }); // initialize animate on scroll library
+// Modal de certificados
+const modal = document.getElementById('modalCert');
+const modalImg = document.getElementById('imgModal');
+const cerrar = document.querySelector('.cerrar');
+
+document.querySelectorAll('.ver-cert').forEach(btn => {
+    btn.addEventListener('click', e => {
+        modal.style.display = 'block';
+        modalImg.src = e.target.dataset.cert;
+    });
 });
+cerrar.addEventListener('click', () => modal.style.display = 'none');
+modal.addEventListener('click', (e) => { if (e.target === modal) modal.style.display = 'none'; });
 
-// Smooth scroll for links with hashes
-$('a.smooth-scroll')
-.click(function(event) {
-  // On-page links
-  if (
-    location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
-    && 
-    location.hostname == this.hostname
-  ) {
-    // Figure out element to scroll to
-    var target = $(this.hash);
-    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-    // Does a scroll target exist?
-    if (target.length) {
-      // Only prevent default if animation is actually gonna happen
-      event.preventDefault();
-      $('html, body').animate({
-        scrollTop: target.offset().top
-      }, 1000, function() {
-        // Callback after animation
-        // Must change focus!
-        var $target = $(target);
-        $target.focus();
-        if ($target.is(":focus")) { // Checking if the target was focused
-          return false;
-        } else {
-          $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
-          $target.focus(); // Set focus again
-        };
-      });
-    }
-  }
+// Modo oscuro
+const toggleDark = document.getElementById('modoOscuro');
+toggleDark.addEventListener('click', () => {
+    document.body.classList.toggle('dark');
 });
