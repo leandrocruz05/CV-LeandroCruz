@@ -48,6 +48,16 @@ header p {
     font-size: 1.1rem;
 }
 
+.vers1 {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    color: #ffffff;
+    text-decoration-color: white;
+    text-decoration-line: grammar-error;
+    font-size: 13px;
+}
+
 #modoOscuro {
     position: absolute;
     top: 15px;
@@ -242,12 +252,6 @@ footer {
 footer a {
     color: #1a73bc;
     text-decoration: none;
-}
-
-.vers1 {
-    color: #ffffff;
-    text-decoration-color: white;
-    text-decoration-line: grammar-error;
 }
 
 /* Modal */
