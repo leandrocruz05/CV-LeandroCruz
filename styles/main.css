@@ -54,7 +54,7 @@ header p {
     left: 15px;
     color: #ffffff;
     text-decoration-color: white;
-    text-decoration-line: grammar-error;
+    text-decoration-line: underline;
     font-size: 13px;
 }
 
