@@ -1,0 +1,381 @@
+h2 {
+  color: #2c3e50;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #ddd;
+  display: inline-block;
+  padding-bottom: 0.3rem;
+}
+
+h3 {
+  font-size: 1.4rem;
+}
+
+h4 {
+  font-size: 1rem;
+}
+
+p {
+  margin-bottom: 0.5rem;
+}
+
+header {
+  background: #2c3e50;
+  color: #fff;
+  text-align: center;
+  padding: 2rem 1rem 3.5rem 1rem;
+  position: relative;
+}
+
+header h1 {
+  font-size: 2rem;
+}
+
+header p {
+  font-size: 1.1rem;
+}
+
+.vers1 {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  color: #ffffff;
+  text-decoration-color: white;
+  text-decoration-line: underline;
+  font-size: 13px;
+}
+
+#modoOscuro {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+section {
+  margin-top: 2rem;
+}
+
+/* Botones Redes Sociales */
+.botones-redes {
+  display: flex;
+  justify-content: center;
+  gap: 1.7rem;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -28px;
+  z-index: 10;
+  width: auto;
+  background: none;
+  pointer-events: none;
+}
+
+.red-social {
+  height: 3.6rem;
+  min-width: 3.6rem;
+  width: 3.6rem;
+  border-radius: 50%;
+  background: #888;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  color: #fff;
+  box-shadow: 0 6px 24px 0 rgba(0, 0, 0, 0.13);
+  transition: background 0.2s, transform 0.2s;
+  border: none;
+  pointer-events: all;
+  text-decoration: none;
+}
+
+.red-social:hover {
+  background: #6a6a6a;
+  transform: translateY(-3px) scale(1.08);
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 2rem;
+  padding-top: 60px;
+  flex: 1;
+}
+
+/* Seccion sobre mi e informacion personal */
+.informacion-personal {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+
+.perfil {
+  flex: 1 1 300px;
+  min-width: 250px;
+}
+
+.sobremi {
+  flex: 1 1 250px;
+  min-width: 220px;
+}
+
+.sobremi ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sobremi ul li a {
+  color: #1a73bc;
+}
+
+/* Seccion Experiencia */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.card h4 {
+  color: #7d7d7d;
+  padding-bottom: 5px;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.items {
+  padding: 0;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  margin-left: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+/* Seccion Estudios*/
+.estudios {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+
+.estudio {
+  flex: 1 1 300px;
+  min-width: 250px;
+}
+
+/* Seccion Formacion */
+.formacion {
+  flex: 1 1 250px;
+  min-width: 220px;
+}
+
+.formacion>.cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.4rem 0.3rem;
+  background: #2c3e50;
+  color: #fff;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  cursor: pointer;
+  border: none;
+}
+
+.btn:hover {
+  background: #1a73bc;
+}
+
+/* Seccion Habilidades */
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.skill {
+  background: #1a73bc;
+  color: #fff;
+  padding: 0.4rem 0.8rem;
+  border-radius: 5px;
+  font-size: 0.9rem;
+}
+
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #2c3e50;
+  color: #fff;
+}
+
+footer a {
+  color: #1a73bc;
+  text-decoration: none;
+}
+
+/* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 10;
+  padding-top: 60px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-content {
+  display: block;
+  margin: auto;
+  max-width: 90%;
+  border-radius: 10px;
+}
+
+.cerrar {
+  position: absolute;
+  top: 20px;
+  right: 35px;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+@media (max-width: 900px) {
+  .container {
+    padding: 1rem;
+  }
+  .informacion-personal,
+  .estudios {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .cards {
+    grid-template-columns: 1fr;
+  }
+  .formacion > .cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  header {
+    padding: 1.2rem 0.5rem 2.5rem 0.5rem;
+  }
+  header h1 {
+    font-size: 1.3rem;
+  }
+  .container {
+    padding: 0.5rem;
+    padding-top: 50px;
+  }
+  .informacion-personal,
+  .estudios {
+    flex-direction: column;
+    gap: 12px;
+  }
+  .perfil,
+  .sobremi,
+  .estudio,
+  .formacion {
+    min-width: 0;
+    flex: 1 1 100%;
+  }
+  .cards,
+  .formacion > .cards {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  .botones-redes {
+    gap: 1.1rem;
+    bottom: -20px;
+  }
+  .red-social {
+    height: 2.8rem;
+    min-width: 2.8rem;
+    width: 2.8rem;
+    font-size: 1.1rem;
+  }
+  h2 {
+    font-size: 1.2rem;
+  }
+  h3 {
+    font-size: 1rem;
+  }
+  h4 {
+    font-size: 0.9rem;
+  }
+  .skills {
+    gap: 0.3rem;
+    flex-wrap: wrap;
+  }
+  .skill {
+    font-size: 0.8rem;
+    padding: 0.3rem 0.5rem;
+  }
+  .modal-content {
+    max-width: 98%;
+  }
+}
+
+/* Modo oscuro */
+.dark {
+  background: #1c1c1c;
+  color: #eee;
+}
+
+.dark header {
+  background: #111;
+}
+
+.dark footer {
+  background: #111;
+}
+
+.dark .card {
+  background: #2c2c2c;
+  color: #eee;
+}
+
+.dark .skills .skill {
+  background: #111;
+  color: #eee;
+}
+
+.dark h2 {
+  color: #fff;
+}
+
+.dark .btn {
+  background: #111;
+}
