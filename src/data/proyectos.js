@@ -1,5 +1,12 @@
 export const proyectos = [
   {
+    titulo: "Backend I - API RESTful con Node.js",
+    descripcion: "Proyecto final del curso de Backend I, enfocado en la construcción de una API RESTful utilizando Node.js y Express. Implementa autenticación, manejo de bases de datos, middleware personalizados y architecture patterns backend, siguiendo las mejores prácticas del desarrollo server-side.",
+    link: "https://github.com/leandrocruz05/Proyecto-Backend-I.git",
+    liveDemo: "",
+    tecnologias: ["Node.js", "Javascript", "MongoDB"]
+  },
+  {
     titulo: "Aplicación Web Interactiva React JS - Proyecto Final",
     descripcion: "Proyecto en desarrollo realizado durante la cursada, enfocado en la creación de una aplicación web interactiva utilizando React JS. Implementa componentes reutilizables, gestión de estado y consumo de API vinculada con Firebase, siguiendo las mejores prácticas de desarrollo frontend moderno.",
     link: "https://github.com/leandrocruz05/Proyecto-Final-React.git",

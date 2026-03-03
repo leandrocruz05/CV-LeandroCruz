@@ -5,6 +5,8 @@ function Proyectos() {
   const getIcon = (tech) => {
     const techLower = tech.toLowerCase()
     if (techLower.includes('react')) return 'fab fa-react'
+    if (techLower.includes('node')) return 'fab fa-node-js'
+    if (techLower.includes('mongodb')) return 'fa fa-leaf'
     if (techLower.includes('javascript')) return 'fab fa-js-square'
     if (techLower.includes('firebase')) return 'fa fa-fire'
     if (techLower.includes('html')) return 'fab fa-html5'
