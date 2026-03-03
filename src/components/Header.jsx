@@ -1,31 +1,28 @@
 import React from 'react'
 
 function Header({ cambiarModoOscuro }) {
-  return (
-    <header>
-      <button id="modoOscuro" onClick={cambiarModoOscuro}>
-        <i className="fa fa-moon"></i>
-      </button>
-      <h1>Leandro Cruz</h1>
-      <p>Analista programador SSr</p>
-      <a className="vers1" href="./version1/index.html">Ir a Versión 1</a>
+  const scrollToSection = (id) => {
+    const element = document.getElementById(id)
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth', block: 'start' })
+    } else {
+      window.scrollTo({ top: 0, behavior: 'smooth' })
+    }
+  }
 
-      <div className="botones-redes">
-        <a className="red-social" href="https://www.linkedin.com/in/leandrocruz05/" rel="tooltip">
-          <i className="fa fa-linkedin"></i>
-        </a>
-        <a className="red-social"
-          href="https://api.whatsapp.com/send?phone=541167425262&text=Hola%20Leandro!%20Nos%20contactamos%20por%20tu%20curriculum!"
-          rel="tooltip">
-          <i className="fa fa-whatsapp"></i>
-        </a>
-        <a className="red-social" href="https://www.instagram.com/lean.cruz/" rel="tooltip">
-          <i className="fa fa-instagram"></i>
-        </a>
-        <a className="red-social" href="https://github.com/leandrocruz05" rel="tooltip">
-          <i className="fa fa-github"></i>
-        </a>
-      </div>
+  return (
+    <header className="nav-header">
+      <nav className="main-nav">
+        <button className="nav-btn" onClick={() => scrollToSection('about')}>Inicio</button>
+        <button className="nav-btn" onClick={() => scrollToSection('experience')}>Experiencia</button>
+        <button className="nav-btn" onClick={() => scrollToSection('skills')}>Habilidades</button>
+        <button className="nav-btn" onClick={() => scrollToSection('projects')}>Proyectos</button>
+        <button className="nav-btn" onClick={() => scrollToSection('education')}>Estudios</button>
+        <button className="nav-btn" onClick={() => scrollToSection('versions')}>Versiones</button>
+        <button className="nav-btn icon-btn" onClick={cambiarModoOscuro}>
+          <i className="fa fa-sun-o"></i>
+        </button>
+      </nav>
     </header>
   )
 }

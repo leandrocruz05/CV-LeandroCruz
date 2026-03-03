@@ -5,6 +5,7 @@ import Experiencia from './components/Experiencia'
 import Educacion from './components/Educacion'
 import Habilidades from './components/Habilidades'
 import Proyectos from './components/Proyectos'
+import Versiones from './components/Versiones'
 import Footer from './components/Footer'
 import Certificados from './components/Certificados'
 import './styles/App.css'
@@ -32,9 +33,10 @@ function App() {
       <div className="container">
         <InfoPersonal />
         <Experiencia />
-        <Educacion abrirModal={abrirModal} />
         <Habilidades />
         <Proyectos />
+        <Educacion abrirModal={abrirModal} />
+        <Versiones />
       </div>
 
       <Footer />

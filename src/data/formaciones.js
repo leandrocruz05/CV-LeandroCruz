@@ -1,8 +1,13 @@
 export const formaciones = [
   {
-    titulo: "Backend I",
+    titulo: "Diseño y Arquitectura Backend",
     institucion: "Coder - 2026",
     certificado: null
+  },
+  {
+    titulo: "Backend I",
+    institucion: "Coder - 2026",
+    certificado: "/certificados/certifReact.png"
   },
   {
     titulo: "React Js",
