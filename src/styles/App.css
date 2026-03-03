@@ -543,6 +543,20 @@ section {
   border-color: #61dafb;
 }
 
+.project-tech-tags .tag[data-tech="Node.js"]:hover,
+.project-tech-tags .tag[data-tech="node.js"]:hover {
+  background: #68a063;
+  color: #fff;
+  border-color: #68a063;
+}
+
+.project-tech-tags .tag[data-tech="MongoDB"]:hover,
+.project-tech-tags .tag[data-tech="mongodb"]:hover {
+  background: #47a248;
+  color: #fff;
+  border-color: #47a248;
+}
+
 .project-tech-tags .tag[data-tech="Firebase"]:hover,
 .project-tech-tags .tag[data-tech="firebase"]:hover {
   background: #ffca28;
