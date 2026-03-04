@@ -23,7 +23,7 @@ function Versiones() {
             </span>
           </div>
           <div className="version-actions">
-            <a href="./version1/index.html" className="btn" target="_blank" rel="noopener noreferrer">
+            <a href="/version1/index.html" className="btn" target="_blank" rel="noopener noreferrer">
               <i className="fa fa-eye"></i> Ver Versión 1.0
             </a>
           </div>
@@ -47,7 +47,7 @@ function Versiones() {
             </span>
           </div>
           <div className="version-actions">
-            <a href="./version2/index.html" className="btn" target="_blank" rel="noopener noreferrer">
+            <a href="/version2/index.html" className="btn" target="_blank" rel="noopener noreferrer">
               <i className="fa fa-eye"></i> Ver Versión 2.0
             </a>
           </div>
